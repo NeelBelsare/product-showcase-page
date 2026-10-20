@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Wafers & Snacks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #e62117; /* Balaji Red */
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Hero Section */
+        .hero {
+            /* Updated hero background to an appealing snack-related image */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Products Section */
+        .products {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+            color: #e62117;
+            font-size: 2rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover; /* Changed to cover for better image fitting */
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .product-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <h1>Balaji Wafers</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Asli Masala, Asli Crunch!</h2>
+        <p>Taste the best quality wafers and snacks crafted for every mood.</p>
+        <a href="#products" class="btn">Explore Products</a>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Our Popular Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <!-- Added Simply Salted Chips Image -->
+                <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=400&q=80" alt="Simply Salted">
+                <h3>Simply Salted Wafers</h3>
+                <p>Classic salted potato chips made from freshly selected potatoes.</p>
+            </div>
+            <div class="product-card">
+                <!-- Added Masala Masti Image -->
+                <img src="https://images.unsplash.com/photo-1613919113640-25732ec5e61f?auto=format&fit=crop&w=400&q=80" alt="Masala Masti">
+                <h3>Masala Masti</h3>
+                <p>Spicy and flavorful masala crunch to lift your mood.</p>
+            </div>
+            <div class="product-card">
+                <!-- Added Tomato Twist Image -->
+                <img src="https://images.unsplash.com/photo-1629838080927-4632128a3036?auto=format&fit=crop&w=400&q=80" alt="Tomato Twist">
+                <h3>Tomato Twist</h3>
+                <p>Sweet and tangy tomato flavor chips for every snack lover.</p>
+            </div>
+            <div class="product-card">
+                <!-- Added Wheelos/Snacks Image -->
+                <img src="https://images.unsplash.com/photo-1599507593499-a3f7d1d94260?auto=format&fit=crop&w=400&q=80" alt="Wheelos">
+                <h3>Wheelos & Snacks</h3>
+                <p>Fun and crunchy extruded snacks loved by all ages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Balaji Wafers Fan Project | Crafted with Pride</p>
+    </footer>
+
+</body>
+</html>
